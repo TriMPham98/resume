@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Tri Pham
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tri Pham} \\ \vspace{1pt}
+    \small 408-506-2642 $|$ \href{mailto:trimpham98@gmail.com}{\underline{trimpham98@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/pham-tri/}{\underline{linkedin.com/in/pham-tri}} $|$
+    \href{https://github.com/TriMPham98}{\underline{github.com/TriMPham98}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, East Bay}{Hayward, CA}
+      {Bachelor of Science, Computer Science}{Aug. 2022 -- May 2024}
+    \resumeSubheading
+      {De Anza College}{Cupertino, CA}
+      {Associate in Science, Computer Science}{Sep. 2019 -- Aug. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rock Band Instructor}{November 2022 -- Present}
+      {San Jose Jazz}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Introduce middle school students with no experience to the electric/acoustic guitar, bass, piano, and drums}
+        \resumeItem{Prepare customized musical arrangements of songs based on skill level}
+        \resumeItem{Rehearse and perform with students for seasonal concerts and school events}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/TriMPham98/Infinite-Ocean-3D-Art-Gallery}{Infinite Ocean}} $|$ \emph{JavaScript, Three.js, Vercel}}{November 2022 -- December 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an interactive 3D art gallery featuring art and photography using the Three.js library}
+            \resumeItem{Implemented responsive camera movements and lighting based on user input}
+            \resumeItem{Hosted website using Vercel}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+
+                \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+
+                \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{:  JavaScript, HTML/CSS, Python, C/C++, Java} \\
+     \textbf{Frameworks}{: React, Node.js} \\
+     \textbf{Developer Tools}{: Git, GitHub, VS Code, PyCharm, CLion, IntelliJ, Eclipse, Android Studio, Vercel} \\
+     \textbf{Libraries}{: Three.js, pyautogui}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
