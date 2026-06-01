@@ -17,21 +17,11 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -41,18 +31,12 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1 \vspace{-2pt}}
 }
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -61,35 +45,25 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-%-------------------------------------------
-%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Tri Pham} \\ \vspace{1pt}
     \small 408-506-2642 $|$ \href{mailto:trimpham98@gmail.com}{\underline{trimpham98@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/pham-tri/}{\underline{linkedin.com/in/pham-tri}} $|$
-    \href{https://github.com/TriMPham98}{\underline{github.com/TriMPham98}}
+    \href{https://www.linkedin.com/in/pham-tri/}{\underline{LinkedIn}} $|$
+    \href{https://www.trimpham.com/}{\underline{Portfolio}} $|$
+    \href{https://github.com/TriMPham98}{\underline{GitHub}}
+
 \end{center}
-%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -99,14 +73,13 @@
       {De Anza College}{Cupertino, CA}
       {Associate in Science, Computer Science}{Sep. 2019 -- Aug. 2022}
   \resumeSubHeadingListEnd
-%-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Simulation Scenario Creator, Autopilot}{June 2025 -- Present}
       {Tesla}{Palo Alto, CA}
       \resumeItemListStart
-        \resumeItem{Create 3D simulation scenarios using proprietary in-house tools to enhance Full Self Driving and Optimus}
+        \resumeItem{Create high-value 3D simulation scenarios using proprietary in-house tools to enhance Full Self-Driving and Optimus}
         \resumeItem{Make critical judgment calls on difficult edge cases and identify areas for improvement in tooling interfaces}
         \resumeItem{Executed Quality Assurance protocols to validate the team's simulation scenario output for stakeholders}
         \resumeItem{Designed a comprehensive onboarding program and train new hires to be production ready in one week}
@@ -129,21 +102,18 @@
         \resumeItem{Worked closely with clients to understand their vision and requirements, translating them into creative solutions}
         \resumeItem{Utilized advanced photo editing software, demonstrating technical proficiency and attention to detail}
       \resumeItemListEnd
-     
   \resumeSubHeadingListEnd
-%-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-   
+ 
       \resumeProjectHeading
           {\textbf{\href{https://github.com/TriMPham98/steinway-blender}{Blender Steinway MIDI Grand Piano}} $|$ \emph{Blender, Python, mido, python-rtmidi}}{May 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{Engineered real-time MIDI control of a detailed Steinway grand piano in Blender, mapping note velocity and sustain from a Yamaha P-515 electric piano to dynamic hammer, damper, and string animations}
-            \resumeItem{Built a Python pipeline using mido + python-rtmidi for hardware-to-3D visualization with photorealistic rendering}
-            \resumeItem{Created live performance visualizations featuring real-time key depression synchronized to actual piano playing}
+            \resumeItem{Engineered real-time MIDI control of a detailed Steinway grand piano in Blender, mapping note velocity and sustain from a Yamaha P-515 to dynamic hammer, damper, and string animations}
+            \resumeItem{Built a Python pipeline using mido and python-rtmidi for bidirectional hardware-to-3D visualization with photorealistic rendering and synchronized particle effects}
+            \resumeItem{Created immersive live performance visualizations featuring real-time key depression and resonance animations synchronized to actual piano playing}
             \resumeItem{Demonstrated advanced 3D asset control, real-time data pipelines, and interactive digital instrument simulation}
           \resumeItemListEnd
-
       \resumeProjectHeading
           {\textbf{\href{https://github.com/TriMPham98/Rogue-Tank-Royale}{Rogue Tank Royale}} $|$ \emph{React, Three.js, TypeScript, Zustand}}{March 2025 -- April 2025}
           \resumeItemListStart
@@ -152,16 +122,14 @@
             \resumeItem{Designed interactive gameplay mechanics including weapon selection, power-ups, and terrain obstacles}
             \resumeItem{Optimized real-time rendering and physics for smooth performance across various devices}
           \resumeItemListEnd
-
       \resumeProjectHeading
           {\textbf{\href{https://github.com/TriMPham98/MagicMirror}{Smart Mirror}} $|$ \emph{Raspberry Pi, Python, OpenCV, MagicMirror²}}{September 2024 -- October 2024}
           \resumeItemListStart
-              \resumeItem{Engineered a custom smart mirror combining woodworking, Raspberry Pi, and MagicMirror² software}
+              \resumeItem{Engineered a custom smart mirror combining hardware (Raspberry Pi), software (MagicMirror²), and woodworking}
               \resumeItem{Integrated OpenCV facial recognition with Raspberry Pi camera for personalized user experiences}
               \resumeItem{Designed and constructed custom wooden frame with two-way mirror, demonstrating cross-disciplinary skills}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
-%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -171,5 +139,4 @@
      \textbf{Libraries}{: shadcn/ui, Three.js, Vite, pyautogui}
     }}
  \end{itemize}
-%-------------------------------------------
 \end{document}
